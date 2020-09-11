@@ -1,6 +1,5 @@
 class Switch:
-    def __init__(self, name):
-        self.name = name
+    def __init__(self):
         self.cases = {}
 
     def case(self, case, function, parameters=None):
