@@ -1,8 +1,8 @@
 from setuptools import setup
 
 setup(name='pyswitch',
-      version='0.1',
-      description='A library from making switch case in python',
+      version='0.2',
+      description='A library for making switch case in python',
       url='https://jr0.org/projects/pyswitch',
       author='Jake Roggenbuck',
       author_email='jake@jr0.org',
