@@ -6,10 +6,9 @@ class Switch:
         self.cases[str(case)] = {"name": function, "parameters": parameters}
 
     def switch(self, case):
-        if self.cases.get(str(case)):
-            func = self.cases[str(case)]
-            func_name = func['name']
+        if (func := self.cases.get(str(case))):
+            name = func['name']
             if func["parameters"] is not None:
-                return func_name(*func["parameters"])
+                return name(*func["parameters"])
             else:
-                return func_name()
+                return name()
